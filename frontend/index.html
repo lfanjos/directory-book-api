@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Livros</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form>
+            <h2>Adicionar Livro</h2>
+            <label for="titulo">Título:</label>
+            <input
+                type="text"
+                name="titulo"
+                id="titulo"
+                placeholder="Insira o título"
+            />
+
+            <label for="autor">Autor:</label>
+            <input
+                type="text"
+                name="autor"
+                id="autor"
+                placeholder="Insira o autor"
+            />
+
+            <label for="desc">Descrição:</label>
+            <input
+                type="text"
+                name="desc"
+                id="desc"
+                placeholder="Insira a descrição"
+            />
+            <div class="message"></div>
+            <button type="submit">Adicionar</button>
+        </form>
+        <div class="table-container">
+            <table>
+                <caption>
+                    Livros
+                </caption>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Descrição</th>
+                </tr>
+            </table>
+        </div>
+        <script src="utils.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
